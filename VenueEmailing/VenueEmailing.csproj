@@ -4,9 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <!--<ProjectReference Include="..\VenueEmailing.Logicc.csproj"></ProjectReference>-->
     <ProjectReference Include="..\VenueEmailing.Logicc\VenueEmailing.Logicc.csproj" />
-    <!--<ProjectReference Include="..\VenueEmailing.Repository.csproj"></ProjectReference>-->
+    <ProjectReference Include="..\VenueEmailing.Repository\VenueEmailing.Repository.csproj" />
   </ItemGroup>
 
 </Project>

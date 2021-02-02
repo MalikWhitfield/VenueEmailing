@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using VenueEmailing.Logicc.Models;
 using VenueEmailing.Repository.Interfaces;
 using VenueEmailing.Repository.Models;
 
@@ -20,6 +21,14 @@ namespace VenueEmailing.Logicc
         public async Task SendEmail(EmailMessage message)
         {
             await _emailRepository.SendEmail(message);
+        }
+
+        public async Task SendInformationRequestedMessage(InformationRequestMessage informationRequestMessage)
+        {
+            var message = new EmailMessage
+            {
+
+            };
         }
     }
 }

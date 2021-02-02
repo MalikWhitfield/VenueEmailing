@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using VenueEmailing.Logicc.Interfaces;
+using VenueEmailing.Logicc.Models;
 
 namespace VenueEmailing.Controllers
 {
@@ -26,7 +27,7 @@ namespace VenueEmailing.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task SendEmail([FromBody] InformationRequestMessage informationRequest)
         {
-            
+            await _notificationsService.SendInformationRequestedMessage(informationRequest);
         }
     }
 }
